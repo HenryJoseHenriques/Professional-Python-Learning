@@ -21,6 +21,6 @@ As a computer engineering student passionate about Python, I’ve curated this r
 
 I'm always eager to learn from others and share my knowledge. Feel free to explore, fork, and contribute to this repository. If you have any questions, suggestions, or just want to connect, reach out to me!
 
-- **LinkedIn:** [Henry José](www.linkedin.com/in/henryjosé)
+- **Email:** henryjose@edu.univali.br
 
 Thank you for joining me on this exciting journey of Python mastery. Let's code and grow together!
