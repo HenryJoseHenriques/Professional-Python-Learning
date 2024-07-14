@@ -11,7 +11,7 @@ lista_frase = frase.split(',') #divive um astring conforme um parâmetro, se est
 lista_frase_corrida = []
 
 for i, frase in enumerate(lista_frase):
-    lista_frase_corrida.append(lista_frase[i].strip())
+    lista_frase_corrida.append(lista_frase[i].strip()) 
 
 print(lista_frase)
 print(lista_frase_corrida)
