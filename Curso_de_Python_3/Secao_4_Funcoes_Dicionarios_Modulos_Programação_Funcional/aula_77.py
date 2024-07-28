@@ -52,7 +52,7 @@ def jogoDePerguntas():
                             print("Reposta errada. Tente novamente")
                             continue
                     else:
-                        print("Você digitou um valor fora do intervalo de alternativas. Tente nvoamente")
+                        print("Você digitou um valor fora do intervalo de alternativas. Tente novamente")
                         continue
             
             else:    
