@@ -16,7 +16,7 @@ msg.attach(MIMEText(body, 'plain'))
 
 # Anexa o arquivo
 filename = 'dataset.csv'  # O nome do arquivo que você quer anexar
-filepath = 'dataset.csv'  # O caminho do arquivo
+filepath = r"C:\Users\Henry\OneDrive\Documents\Formacao\Python_Learning\smtplib\dataset.csv"  # O caminho do arquivo
 
 # Abre o arquivo no modo binário
 with open(filepath, 'rb') as attachment:
@@ -38,5 +38,5 @@ msg.attach(part)
 # Envia o email usando smtplib
 with smtplib.SMTP('smtp-mail.outlook.com', 587) as server:
     server.starttls()  # Inicia a conexão TLS
-    server.login('#########', '########')
+    server.login('henryjose@edu.univali.br', '0164@Jorel')
     server.sendmail(msg['From'], msg['To'], msg.as_string())

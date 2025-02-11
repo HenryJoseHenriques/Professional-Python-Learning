@@ -26,8 +26,26 @@ lista_de_listas_de_inteiros = [
     [10, 9, 8, 7, 6, 5, 4, 3, 2, 1],
 ]
 
-# def procuraDuplicacao():
-#     while True:
+def primeira_ocorrencia(lista_de_inteiros):
+    primeiro_duplicado = -1
+    lista_gabarito = set()
+    for numero in lista_de_inteiros:
+        if numero in lista_gabarito:
+            primeiro_duplicado = numero
+            break
+        lista_gabarito.add(numero)
+    return primeiro_duplicado
 
-set_de_lista_de_inteiros = set(lista_de_listas_de_inteiros)
-print(set_de_lista_de_inteiros)
+def segunda_ocorrencia(lista_de_inteiros, primeiro_duplicado):
+    segundo_duplicado = -1
+    lista_gabarito = set()
+    for numero in lista_de_inteiros:
+        if numero in lista_gabarito and numero != primeiro_duplicado:
+            segundo_duplicado = numero
+            break
+        lista_gabarito.add(numero)
+    return segundo_duplicado
+
+
+for lista in lista_de_listas_de_inteiros:
+    print(lista, segunda_ocorrencia(lista, primeira_ocorrencia(lista)))
